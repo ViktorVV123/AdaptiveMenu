@@ -1,0 +1,63 @@
+.menu {
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    top:50px;
+    left:0;
+    transform: translateX(-120%);
+
+}
+.menuActive{
+    transform: translateX(0%);
+    position: fixed;
+    height: 100vh;
+    top:50px;
+    left:0;
+    transition: all 0.3s;/* анимация меню  */
+
+}
+.blur {
+    width: 100vh;
+    height: 100vh;
+    left:30%;
+    backdrop-filter: blur(2px);
+    position: absolute;
+}
+.menuContent{
+    width: 40%;
+    height: 100%;
+    background-color:darkcyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s;
+}
+.menuHeader {
+    padding:10px;
+    border-bottom: 1px solid white;
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+ul li a {
+    color: white;
+    text-decoration: none; /*убирает подчеркивание ссылки*/
+}
+ul li  {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen  and  (width: 760px){
+    .menuContent {
+        width:100%
+    }
+}
